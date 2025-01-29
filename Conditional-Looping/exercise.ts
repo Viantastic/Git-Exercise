@@ -39,9 +39,34 @@ for (let i = 1; i <= n3; i++) {
 
 console.log(sum);
 
-//4. Exercise
+//4. Exercise Faktorial
 
-//const n4: number = 4;
-//let fact: number = 0;
+function factorial(n) {
+    if (n === 0 || n === 1) {
+      return 1;
+    } else {
+      return n * factorial(n - 1);
+    }
+  }
 
-//for (let i = 4; i <= n4; i--);
+  let num: number = 6;
+  console.log(`Faktorial dari ${num} adalah ${factorial(num)}`);
+
+  //5. Exercise Fibonacci
+
+  function fibonacci(n) {
+    let fib = [];
+    let a = 0, b = 1;
+  
+    for (let i = 0; i < n; i++) {
+      fib.push(a);
+      let next = a + b;
+      a = b;
+      b = next;
+    }
+  
+    return fib;
+  }
+  
+  let N = 15;
+  console.log(`The first ${N} Fibonacci numbers are:`, fibonacci(N));
