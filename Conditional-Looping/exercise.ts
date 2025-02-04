@@ -49,8 +49,8 @@ function factorial(n) {
     }
   }
 
-  let num: number = 6;
-  console.log(`Faktorial dari ${num} adalah ${factorial(num)}`);
+  let num7 = 6;
+  console.log(`Faktorial dari ${num7} adalah ${factorial(num7)}`);
 
   //5. Exercise Fibonacci
 
@@ -59,7 +59,7 @@ function factorial(n) {
     let a = 0, b = 1;
   
     for (let i = 0; i < n; i++) {
-      fib.push(a);
+      fib.push();
       let next = a + b;
       a = b;
       b = next;
